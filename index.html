@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>FURIOSA</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+    <svg display="none">
+    <symbol id="telegram" viewBox="0 0 28 25">
+        <g>
+            <path
+                d="M27.4463 0.462525C27.3257 0.358361 27.179 0.289105 27.0219 0.26223C26.8648 0.235354 26.7034 0.25188 26.5551 0.310024L1.22255 10.2238C0.914428 10.3443 0.653737 10.5616 0.479629 10.843C0.305521 11.1243 0.227393 11.4546 0.256981 11.7841C0.286568 12.1137 0.422272 12.4247 0.643714 12.6706C0.865155 12.9164 1.16038 13.0838 1.48505 13.1475L8.25005 14.4763V22C8.25019 22.3488 8.35456 22.6896 8.54976 22.9787C8.74497 23.2678 9.0221 23.4919 9.34559 23.6223C9.66908 23.7528 10.0242 23.7836 10.3653 23.7108C10.7064 23.638 11.018 23.4649 11.2601 23.2138L14.5901 19.76L19.7876 24.3163C20.1049 24.597 20.5138 24.7522 20.9376 24.7525C21.1226 24.7521 21.3064 24.723 21.4826 24.6663C21.7713 24.5749 22.031 24.4094 22.2359 24.1864C22.4407 23.9633 22.5835 23.6905 22.6501 23.395L27.7276 1.32127C27.7632 1.16609 27.7559 1.00411 27.7064 0.852784C27.6568 0.701457 27.5669 0.566525 27.4463 0.462525ZM1.7563 11.6713C1.75151 11.6584 1.75151 11.6442 1.7563 11.6313C1.76195 11.6269 1.76829 11.6235 1.77505 11.6213L21.7388 3.80627L8.8263 13.0563L1.77505 11.6763L1.7563 11.6713ZM10.1801 22.1713C10.1456 22.207 10.1013 22.2317 10.0527 22.2422C10.0042 22.2526 9.95367 22.2484 9.90754 22.2301C9.86142 22.2117 9.82181 22.18 9.79376 22.139C9.76571 22.0981 9.75049 22.0497 9.75005 22V15.5138L13.4613 18.7638L10.1801 22.1713ZM21.1888 23.0563C21.1796 23.0985 21.1592 23.1375 21.1297 23.1692C21.1002 23.2009 21.0628 23.224 21.0213 23.2363C20.979 23.2511 20.9334 23.2543 20.8894 23.2455C20.8455 23.2367 20.8047 23.2163 20.7713 23.1863L10.2051 13.9175L25.8751 2.68752L21.1888 23.0563Z" />
+        </g>
+    </symbol>
+    <symbol id="x" viewBox="0 0 28 28">
+        <g>
+            <path
+                d="M16.588 11.856L26.714 0H24.314L15.524 10.294L8.50002 0H0.400024L11.02 15.568L0.400024 28H2.80002L12.084 17.128L19.502 28H27.602L16.588 11.856ZM13.302 15.704L12.226 14.154L3.66402 1.82H7.35002L14.258 11.774L15.334 13.324L24.316 26.264H20.63L13.302 15.704Z" />
+        </g>
+    </symbol>
+    <symbol id="email" viewBox="0 0 26 20">
+        <g>
+            <path
+                d="M25 0.25H1C0.801088 0.25 0.610322 0.329018 0.46967 0.46967C0.329018 0.610322 0.25 0.801088 0.25 1V18C0.25 18.4641 0.434375 18.9092 0.762563 19.2374C1.09075 19.5656 1.53587 19.75 2 19.75H24C24.4641 19.75 24.9092 19.5656 25.2374 19.2374C25.5656 18.9092 25.75 18.4641 25.75 18V1C25.75 0.801088 25.671 0.610322 25.5303 0.46967C25.3897 0.329018 25.1989 0.25 25 0.25ZM23.0725 1.75L13 10.9825L2.9275 1.75H23.0725ZM24 18.25H2C1.9337 18.25 1.87011 18.2237 1.82322 18.1768C1.77634 18.1299 1.75 18.0663 1.75 18V2.705L12.5 12.5525C12.6383 12.679 12.8189 12.7491 13.0063 12.7491C13.1936 12.7491 13.3742 12.679 13.5125 12.5525L24.25 2.705V18C24.25 18.0663 24.2237 18.1299 24.1768 18.1768C24.1299 18.2237 24.0663 18.25 24 18.25Z" />
+        </g>
+    </symbol>
+</svg>
+    <header class="header">
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__row">
+                <nav class="header__menu menu-header" data-da="mobile-header__body, 0, 525">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link">
+                                MOVIE WEBSITE
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link">
+                                COINMARKETCAP
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="" class="menu-header__link">
+                                BUY TOKET
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile mobile-header">
+        <div class="mobile-header__container container">
+            <div class="mobile-header__body"></div>
+        </div>
+    </div>
+</header>
+    <main class="home">
+        <section class="home__main main-home">
+            <div class="main-home__image-block">
+                <div class="main-home__image ibg">
+                    <img src="img/home-bg.jpg" alt="home-bg">
+                </div>
+            </div>
+            <div class="main-home__inner">
+                <div class="main-home__container container">
+                    <div class="main-home__body">
+                        <div class="main-home__content">
+                            <div class="main-home__logo">
+                                <img src="img/logo-icon.png" alt="logo">
+                            </div>
+                            <div class="main-home__code">
+                                Oxba2ae424d960c26247dd6c32edc70b295c744c43
+                            </div>
+                            <h1 class="main-home__title title-h1">
+                                <span>
+                                    <img src="img/home-title.svg" alt="home-title">
+                                </span>
+                                <span>MEME TOKEN</span>
+                            </h1>
+                            <div class="main-home__subtitle">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main-home__bottom">
+                            <div class="main-home__socials socials">
+                                <div class="socials__items">
+                                    <div class="socials__item">
+                                        <a href="" class="socials__link">
+                                            <svg>
+                                                <use xlink:href="#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="socials__item">
+                                        <a href="" class="socials__link">
+                                            <svg>
+                                                <use xlink:href="#x"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="main-home__btn btn">
+                                buy token
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home__roadmap roadmap-home">
+            <div class="roadmap-home__body">
+                <h2 class="roadmap-home__title title-roadmap-home title-h2">
+                    <div class="title-roadmap-home__icon">
+                        <img src="img/furiosa-icon.svg" alt="furiosa">
+                    </div>
+                    <span>ROADMAP</span>
+                </h2>
+                <div class="roadmap-home__content content-roadmap-home">
+                    <div class="content-roadmap-home__main-img">
+                        <img src="img/road-big.svg" alt="road">
+                    </div>
+                    <div class="content-roadmap-home__small-img">
+                        <img src="img/road-small.svg" alt="road">
+                    </div>
+                    <div class="content-roadmap-home__items">
+                        <div class="content-roadmap-home__item content-roadmap-home__item_1 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                        <div class="content-roadmap-home__item content-roadmap-home__item_2 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                        <div class="content-roadmap-home__item content-roadmap-home__item_3 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                        <div class="content-roadmap-home__item content-roadmap-home__item_4 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                        <div class="content-roadmap-home__item content-roadmap-home__item_5 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                        <div class="content-roadmap-home__item content-roadmap-home__item_6 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                        <div class="content-roadmap-home__item content-roadmap-home__item_7 item-content-roadmap-home">
+                            <div class="item-content-roadmap-home__icon">
+                                <img src="img/road-items/01.svg" alt="road-img">
+                            </div>
+                            <div class="item-content-roadmap-home__info">
+                                <div class="item-content-roadmap-home__date">
+                                    24 April 2004
+                                </div>
+                                <div class="item-content-roadmap-home__text">FURIOSA token launch</div>
+                                <div class="item-content-roadmap-home__supply">
+                                    <span class="item-content-roadmap-home__supply-label">Supply:</span>
+                                    <span class="item-content-roadmap-home__supply-value">1 000 000 000 Tokens</span>
+                                </div>
+                                <div class="item-content-roadmap-home__text">1/3 Tokens on Hold</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="roadmap-home__btn btn">
+                    buy token
+                </a>
+            </div>
+        </section>
+        <section class="home__economics economics-home">
+            <div class="economics-home__container container">
+                <div class="economics-home__body">
+                    <h2 class="economics-home__title title-h2">
+                        ECONOMICS
+                    </h2>
+                    <div class="economics-home__row">
+                        <div class="economics-home__column">
+                            <div class="economics-home__item item-economics-home">
+                                <h3 class="item-economics-home__title title-h3">ECONOMICS</h3>
+                                <div class="item-economics-home__row">
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            Liquidity pool 100% in pancakeswap
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Ownership renounced
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Liquidity Locked
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Total Tax 4.9% Buy / Sell, 0 tax on transfer
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            2.7% Tax is converted in BTC and sent to $BICS holders automatically
+                                        </div>
+                                    </div>
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            0.8% Tax, Buyback, development and marketing
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Auto-burn 1.4% Tax is added automatically to the liquidity
+                                            pool and $BICS tokens goes to a burn wallet forever (deflationary)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="economics-home__column">
+                            <div class="economics-home__item item-economics-home">
+                                <h3 class="item-economics-home__title title-h3">FURIOSA Token details:</h3>
+                                <div class="item-economics-home__row">
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            Liquidity pool 100% in pancakeswap
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Ownership renounced
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Liquidity Locked
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Total Tax 4.9% Buy / Sell, 0 tax on transfer
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            2.7% Tax is converted in BTC and sent to $BICS holders automatically
+                                        </div>
+                                    </div>
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            0.8% Tax, Buyback, development and marketing
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Auto-burn 1.4% Tax is added automatically to the liquidity
+                                            pool and $BICS tokens goes to a burn wallet forever (deflationary)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="economics-home__column">
+                            <div class="economics-home__item item-economics-home">
+                                <h3 class="item-economics-home__title title-h3">How to buy FURIOSA Token?</h3>
+                                <div class="item-economics-home__row">
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            Liquidity pool 100% in pancakeswap
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Ownership renounced
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Liquidity Locked
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Total Tax 4.9% Buy / Sell, 0 tax on transfer
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            2.7% Tax is converted in BTC and sent to $BICS holders automatically
+                                        </div>
+                                    </div>
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            0.8% Tax, Buyback, development and marketing
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Auto-burn 1.4% Tax is added automatically to the liquidity
+                                            pool and $BICS tokens goes to a burn wallet forever (deflationary)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="economics-home__column">
+                            <div class="economics-home__item item-economics-home">
+                                <h3 class="item-economics-home__title title-h3">FAQ</h3>
+                                <div class="item-economics-home__row">
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            Liquidity pool 100% in pancakeswap
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Ownership renounced
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Liquidity Locked
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Total Tax 4.9% Buy / Sell, 0 tax on transfer
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            2.7% Tax is converted in BTC and sent to $BICS holders automatically
+                                        </div>
+                                    </div>
+                                    <div class="item-economics-home__column">
+                                        <div class="item-economics-home__item">
+                                            0.8% Tax, Buyback, development and marketing
+                                        </div>
+                                        <div class="item-economics-home__item">
+                                            Auto-burn 1.4% Tax is added automatically to the liquidity
+                                            pool and $BICS tokens goes to a burn wallet forever (deflationary)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home__join join-home">
+            <div class="join-home__image-block">
+                <div class="join-home__image ibg">
+                    <img src="img/home-bg.jpg" alt="join-bg">
+                </div>
+            </div>
+            <div class="join-home__inner">
+                <div class="join-home__container container">
+                    <div class="join-home__row">
+                        <div class="join-home__column">
+                            <h2 class="join-home__title title-h2">
+                                Join community and get extra token bonus
+                            </h2>
+                            <div class="join-home__subtitle">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="join-home__column">
+                            <form action="#" class="join-home__form form-join-home">
+                                <div class="form-join-home__item">
+                                    <div class="form-join-home__label">Email</div>
+                                    <input placeholder="Only gmail supporteed" autocomplete='off' type='email'
+                                        name='form[]' class='form-join-home__input input required'>
+                                    <div class="form-join-home__message">Error message</div>
+                                </div>
+                                <div class="form-join-home__item">
+                                    <div class="form-join-home__label">Bep20 address</div>
+                                    <input placeholder="Only gmail supporteed" autocomplete='off' type='text'
+                                        name='form[]' class='form-join-home__input input required'>
+                                    <div class="form-join-home__message">Error message</div>
+                                </div>
+                                <button type='submit' class='form-join-home__btn btn'>Subcribe & Get tokens</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <div class="footer__column">
+                <a href="" class="footer__logo">
+                    <img src="img/logo-footer.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__column">
+                <div class="footer__text">
+                    <p>
+                        As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into
+                        the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland
+                        they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for
+                        dominance, Furiosa must survive many trials as she puts together the means to find her way home.
+                    </p>
+                </div>
+                <a href="mailto:partners@furiosa.com" class="footer__email email-footer">
+                    <span class="email-footer__icon">
+                        <svg>
+                            <use xlink:href="#email"></use>
+                        </svg>
+                    </span>
+                    <span class="email-footer__text">partners@furiosa.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
